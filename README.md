@@ -13,5 +13,13 @@ My assignments and projects handin from Lnu (Linnaeus Unviersity)
 ---- 
 
 ### The purpose of this project
-1. My past and first experience in the programming world 
+1. Showcase my past and first experience in the programming world 
 2. CV-starter, well there is progress, and there is always room for progress.
+
+### Whats in this project?!
+My school assignments and projects att Linnaeus University.
+Studied webb programming, a 2 years long program that can be extended with a third year for Master's and Master's level.
+Currently studying web science for the third year.
+
+### Why?!
+Why not?!
