@@ -1,5 +1,5 @@
 ## About the course
 
-Kursen Objektoreinterad programmering (1DV024) är en programkurs för studenter vid programmet Webbprogrammerare vid Linnéuniversitetet i Kalmar och genomförs på campus såväl som distans. Kursen behandlar objekt programmering där applikationer skrivs i C# tillsammans med .NET Framework.
+I denna kurs får du arbeta individuellt med att ta fram en mjukvara från idé till färdig applikation. Du kommer att arbeta mycket med programmering, krav, planering och testning. Till din hjälp har du ett antal kurskamrater som arbetar med liknande idéer eller liknande tekniker samt handledarmöten varje vecka. Du kommer att arbeta iterativt med en SCRUM-liknande arbetsprocess. Kursen har ett entrepenöriellt fokus och innehåller ett antal gästföreläsningar från olika organisationer och näringslivet. Kursen avslutas med en gemensam redovisning där du får visa upp din applikation och berätta om dina erfarenheter under utvecklingen.
 
 ---
