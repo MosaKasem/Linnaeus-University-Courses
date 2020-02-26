@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+// Define defaults for each variable.
+
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$text-color:       #000000 !default;
+$background-color: #bbbbbb !default;
+$brand-color:      #242424 !default;
+
+$grey-color:       #828282 !default;
+$grey-color-light: lighten($grey-color, 40%) !default;
+$grey-color-dark:  darken($grey-color, 25%) !default;
+
+// Width of the content area
+$content-width:    800px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+
+//my code
+@mixin background($imgpath,$position:0 0,$repeat: no-repeat) {
+  background: {
+      image: url($imgpath);
+      position: $position;
+      repeat: $repeat;
+  }
+}
+.site-title {
+  display: block;
+  text-decoration: none;
+}
+.site-footer, .site-header {
+  @include background("./img/footer1.gif")
+}
+.footer-col-2 a .site-title {
+  background-color: black;
+  border-style: solid;
+  border-radius: 5px;
+  border:white;
+  color: white;
+}
+.page-content {
+  @include background("./img/background.jpg")
+}
+.page-link, .site-title {
+  color: white;
+}
+$flashy-image: url("./img/side.jpg");
+$transparent-backgruound: rgba(255, 255, 255, 0.493);
+$size-border-all: 5px solid black;
+$size-xsmall: 2px;
+$translucent-white: rgba(255, 255, 255, 0.205);
+$translucent-white1: rgba(27, 51, 0, 0.205);
+$colorForText: #c2c2c2;
+$border-style: 1px solid rgba(0, 126, 112, 0.401);
+$my-font-stack: Helvetica, sans-serif;
+p, .highlight {
+  text-align: left;
+}
+.home {
+  padding: 20px;
+  background-color: $transparent-backgruound;
+  border-radius: 25px;
+  border: white;
+  border-width: 2px;
+  border-style: solid;
+  background-image: $flashy-image;
+  background-position: right;
+}
+@mixin for-large-text {
+  font: {
+    font-family: Arial;
+    size: 1820px;
+    font-weight: bold;
+  }
+}
+a:hover {
+  border-left-width:5px;
+  font-family:arial;
+  font-weight:bold;
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  &:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  &:hover {
+    color: rgb(255, 0, 0);
+    box-shadow: 4px 4px 0px #000000;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    text-decoration: none;
+  }
+}
+.post-list nav, ul, li {
+  display: block;
+}
+.site-header {
+  background-color: rgb(32, 32, 32);
+}
+.post {
+  background-color: $transparent-backgruound;
+  border-radius: 25px;
+  border: white;
+  border-width: 2px;
+  border-style: solid;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+.post-list {
+  background-image: url("./img/background-inside.jpg");
+  border-radius: 25px;
+  border: white;
+  border-width: 2px;
+  border-style: solid;
+  padding: 25px;
+  margin: 25px;
+  text-align: center;
+}
+.post-content {
+  color: #191919cc;
+  background-color: $transparent-backgruound;
+  padding: 10px;
+  border: white;
+  border-width: 2px;
+  border-style: solid;
+}
+h3 {
+  text-align: center;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  font-family: $my-font-stack;
+  color: rgba(0, 3, 41, 0.87);
+}
+.home h1 {
+  text-align: center;
+  font-family: $my-font-stack;
+  color: white;
+}
+.page-heading {
+  display: inherit;
+}
+h1 {
+  text-align: center;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  font-family: $my-font-stack;
+}
+cite {
+  color: $colorForText;
+}
+mark {
+  color: black;
+  background-color: $colorForText;
+}
+
+// my code ends here
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin relative-font-size($ratio) {
+  font-size: $base-font-size * $ratio;
+}
+
+// Import partials.
+@import
+  "minima/base",
+  "minima/layout",
+  "minima/syntax-highlighting"
+;

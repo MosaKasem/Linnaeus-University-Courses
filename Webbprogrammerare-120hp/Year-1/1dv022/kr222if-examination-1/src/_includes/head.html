@@ -1,0 +1,23 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="mosa-kasem" />
+  <meta property="og:type" content="SocialMedia" />
+  <meta property="og:url" content="https://github.com/MosaKasem/MosaKasem.github.io.git" />
+  <meta property="og:image" content="https://ca.slack-edge.com/T0347K4GQ-U6UD4851N-b11dddd640d0-1024" />
+  <meta name="twitter:card" content="my_pic_large" />
+  <meta property="sl:app_id" content="U6UD4851N" />
+
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  
+  {% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+  {% endif %}
+</head>

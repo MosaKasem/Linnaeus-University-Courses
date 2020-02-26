@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <title>Moses</title>
+</head>
+
+<body>
+    <div id="background">
+        <main>
+            <aside id="mySidenav" class="sidenav ">
+                <i class="iconColor fa fa-angle-down">
+
+                    <div class="fas" id="expand">
+                            <div class="time-frame">
+                                    <div id="date-part"></div>
+                                    <div id="time-part"></div>
+                                </div>
+                        <a class="fas fa-copy" id="Memory" href="#Memory.js"> Memory</a>
+                        <a class="fas fa-comment-alt" id="ChatButton" href="#Chat.js"> Chat</a>
+                        <a class="fas fa-drum" id="DrumKit" href="#KeyPad.js"> Drums</a>
+                    </div>
+                </i>
+    </div>
+    </aside>
+
+    <template id="draggableTemp">
+        <div class="draggable">
+            <div class="top">
+                <span class="close"><i class="fa fa-window-close"></i></span>
+            </div>
+        </div>
+    </template>
+
+    <template id="KeyPadGame">
+        <div class="KeyPadGame">
+
+            <div class="keys">
+                <div data-key="clap" class="key">
+                    <audio data-key="clap" src="sounds/clap.wav"></audio>
+
+                    Clap
+                </div>
+                <div data-key="hihat" class="key">
+                    <audio data-key="hihat" src="sounds/hihat.wav"></audio>
+
+                    Hihat
+                </div>
+                <div data-key="kick" class="key">
+                    <audio data-key="kick" src="sounds/kick.wav"></audio>
+
+                    Kick
+                </div>
+                <div data-key="openhat" class="key">
+                    <audio data-key="openhat" src="sounds/openhat.wav"></audio>
+
+                    openHit
+                </div>
+                <div data-key="boom" class="key">
+                    <audio data-key="boom" src="sounds/boom.wav"></audio>
+
+                    Boom
+                </div>
+                <div data-key="ride" class="key">
+                    <audio data-key="ride" src="sounds/ride.wav"></audio>
+
+                    Ride
+                </div>
+                <div data-key="snare" class="key">
+                    <audio data-key="snare" src="sounds/snare.wav"></audio>
+
+                    Snare
+                </div>
+                <div data-key="tom" class="key">
+                    <audio data-key="tom" src="sounds/tom.wav"></audio>
+
+                    Tom
+                </div>
+                <div data-key="tink" class="key">
+                    <audio data-key="tink" src="sounds/tink.wav"></audio>
+
+                    Tink
+                </div>
+            </div>
+            <div> 
+                <a id="playButton" href="#replay">
+                Replay
+                </a>
+             </div>
+        </div>
+
+
+
+    </template>
+
+    <template id="memoryContainer"> 
+        <div class="memoryContainers">
+            <a class="memoryDivContainer" href='#'>
+                <img src="image/0.png" alt="A memory brick">
+            </a>
+            
+        <div class="contentDiv">
+            <div class="timer"></div>
+        </div>
+    </div>
+    </template>
+
+    <template id="chat">
+        <div class="chat">
+            <input id="pickUserName" type="text" class="dontDisplay" placeholder="Type username">
+            <button class="dontDisplay">Save</button>
+            <div class="messages">
+                <template>
+                    <div class="message">
+                        <p class="author"></p>
+                        <p class="text"></p>
+                    </div>
+                </template>
+            </div>
+            <textarea class="dontDisplay messageArea"></textarea>
+            <div id="changeUsername"><i class="fas fa-user"></i> Change Username </div>
+        </div>
+    </template>
+    <script src="build.js"></script>
+    </main>
+    </div>
+
+
+</body>
+
+
+</html>
+
+<script>
+
+</script>

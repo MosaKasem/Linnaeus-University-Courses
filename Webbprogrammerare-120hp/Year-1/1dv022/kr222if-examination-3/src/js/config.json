@@ -1,0 +1,8 @@
+{
+    "address": "ws://vhost3.lnu.se:20080/socket/",
+    "key": "eDBE76deU7L0H9mEBgxUKVR0VCnq0XBd",
+    "EmilsServ": "ws://188.166.67.186:8080",
+    "EmilsKey": "nG5IMugswqKVwLTxbsJTfDhiIBw5fqHNrju8aLzdRx3DD5VPMH",
+    "TestServ": "ws://localhost:8080"
+}
+

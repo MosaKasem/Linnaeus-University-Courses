@@ -1,0 +1,361 @@
+body {
+    background-color: black;
+}
+
+.time-frame {
+    background-color: #111;
+    color: #ffffff;
+    width: 300px;
+    font-family: Arial;
+    float: left;
+}
+
+.time-frame > div {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+/**
+
+This is for KEYPAD - begins here
+
+*/
+.keys {
+  display: flex;
+  min-height: 1vh;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.key {
+  border: .4rem solid black;
+  border-radius: .5rem;
+  /* margin: 1rem; */
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all 0.2s ease;
+  width: 6rem;
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.4);
+  text-shadow: 0 0 .5rem black;
+}
+.key:hover {
+    cursor: pointer;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+
+.message {
+    position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+}
+
+.message.myMessageDiv {
+	position: relative;
+	background: #969cf1;
+	border-radius: .4em;
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #ffc600;
+}
+
+.iconColor {
+    color: white;
+    font-size: 2em;
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+}
+.iconColor:hover {
+    color: red;
+    -webkit-transform: skewY(5)
+}
+#expand {
+    visibility: hidden;
+    display: inline-block;
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s;
+
+    animation-name: moveToTheRight;
+    animation-duration: 2s;
+    opacity: 0;
+
+}
+@keyframes moveToTheRight {
+    from {left: 0px}
+    to {left: 200px}
+}
+.iconColor:hover #expand {
+    visibility: visible;
+    padding-left: 20px;
+    opacity: 1;
+}
+/**
+
+This is for KEYPAD - ends here
+
+*/
+.memoryContainers {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+    
+    -webkit-flex-flow: row wrap;
+    justify-content: center;
+
+}
+.memoryDivContainer {
+    text-align: center;
+}
+.memoryContainers img {
+    width: 94px;
+    background-color: black;
+    margin-right: 0px;
+    margin-left: 0px;
+    background-color: white;
+}
+/*
+This is for BrowserLookingWindow
+**/
+* {
+    box-sizing: border-box;
+}
+.usernameVisibility {
+    visibility: visible;
+    background: #f90;
+    color: #f1f1f1;
+}
+.dontDisplay {
+    visibility: hidden;
+    display: none;
+}
+
+.close {
+    color: #f90;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    width: 16px;
+    height: 12px;
+    border-radius: 5px;
+}
+
+.container {
+    border: 3px solid #f1f1f1;
+}
+
+.top {
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+.content {
+    padding: 10px;
+}
+.centerDiv {
+    width: 100%;
+    text-align: center;
+}
+.removed {
+    visibility: hidden;
+}
+/*
+This is for Drag
+**/
+#drag-1, #drag-2 {
+    width: 395px;
+    height: 395px;
+    margin: auto;
+  
+    background-color: #29e;
+    color: white;
+  
+    border-radius: 0.75em;
+    border: 2px;
+  
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  
+  #drag-me::before {
+    content: "#" attr(id);
+    font-weight: bold;
+  }
+
+/**
+RPG game color
+*/
+#ColorTemplate {
+    background-color: #232323;
+}
+.square {
+    width: 30%;
+    background: purple;
+    padding-bottom: 30%;
+}
+.dot {
+    float: right;
+    height: 12px;
+    width: 12px;
+    background-color: rgb(255, 8, 8);
+    border-radius: 50%;
+    display: inline-block;
+}
+/**
+CSS--
+*/
+.draggable {
+    position: absolute;
+    background-color: #ff9900;
+    width: 395px;
+    box-sizing: border-box;
+    border: 3px solid #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 3px solid #ff9900;
+    
+}
+
+#background {
+    background-image: url("/../image/background.jpg");
+    position: fixed;
+    background-color: black;
+    background-repeat: no-repeat; 
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+.sidenav {
+    position: relative; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 20px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+    text-shadow: 0px 0px 5px white;
+}
+.onclickActive:hover {
+    color: white;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+.close {
+    cursor: pointer;
+}
+.timer {
+    width: 100%;
+    text-align: center;
+}
+.messageArea {
+    width: 100%;
+    height: 38px;
+    background: rgba(75, 0, 0, 0.7);
+    color: #fff;
+    resize: none;
+    padding: 10px 8px 0 8px;
+    line-height: 16px;
+    margin: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+    border-left: 0;
+    overflow: hidden;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+textarea {
+    resize: none;
+}
+.message {
+    /* word-wrap: break-all;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 6px;
+    margin-top: 2px;
+    padding-bottom: 2px; */
+}
+.chat {
+    /* display: flex;
+    overflow: auto;
+    flex-direction: column;
+    flex: 1; */
+/*     -webkit-flex: 1 1 auto;
+    overflow-y: auto;
+    height: 400px; */
+}
+.messages {
+    -webkit-flex: 1 1 auto;
+    overflow-y: auto;
+    height: 345px;
+}
+
+.author {
+    white-space: nowrap;
+    padding-right: 10px;
+}
+p {
+    word-wrap: break-word;
+    margin: 0;
+    /* display: block; */
+}
+/* .text {
+    width: 50%;
+} */
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* minimize removed */

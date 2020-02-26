@@ -1,0 +1,10 @@
+version: '2'
+services:
+  site:
+    image: jekyll/builder:3.6.0
+    volumes:
+      - ./src:/srv/jekyll
+      - ./vendor/bundle:/usr/local/bundle
+    ports:
+      - 4000:4000
+      - 35729:35729

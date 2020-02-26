@@ -1,0 +1,37 @@
+{
+  "name": "@1dv022/jekyll-boilerplate",
+  "version": "1.0.0",
+  "homepage": "https://coursepress.lnu.se/kurs/klientbaserad-webbprogrammering/",
+  "description": "A simple gettingstarted with Jekyll, Github-pages using Docker",
+  "contributors": [
+    {
+      "name": "Johan Leitet",
+      "email": "johan.leitet@lnu.se"
+    },
+    {
+      "name": "John Häggerud",
+      "email": "john.haggerud@lnu.se"
+    },
+    {
+      "name": "Mats Loock",
+      "email": "mats.loock@lnu.se"
+    },
+    {
+      "name": "Jacob Lindehoff",
+      "email": "jacob.lindehoff@lnu.se"
+    }
+  ],
+  "license": "CC-BY-4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1dv022/jekyll-boilerplate"
+  },
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "scripts": {
+    "start": "docker-compose run --service-ports site jekyll serve --force_polling",
+    "update": "docker-compose run site jekyll update",
+    "postinstall": "docker-compose run site jekyll new ."
+  }
+}

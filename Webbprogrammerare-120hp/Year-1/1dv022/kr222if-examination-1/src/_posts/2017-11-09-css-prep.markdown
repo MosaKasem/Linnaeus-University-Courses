@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "CSS preprocessors"
+date:   2017-11-08 00:00:00 -0600
+categories: jekyll update
+---
+# What do you think of pre-compiling your CSS?
+
+It's ok.
+#### Questions
+__1-Compare to regular css__
+
+
+__2-Which techniques did you use?__
+
+
+__3-Pros and cons?__
+
+**1a.** Storing values in a variable that starts with the dollar sign, and you link those variables to multiple css codes of your choice, easier to maintain in the long run.
+
+**2a.** border, background, color (may have changed some due to error), used @mixin and @include, and ofcourse storing values, and background in $variables, i hope that answers your question.
+
+**3a.** __Cons__: More code. 
+__pros:__ cleaner ui, coming from css, i found inlines to be much easier to understand, like this example `body {color: red;}` over `body color: red`
+
+
+

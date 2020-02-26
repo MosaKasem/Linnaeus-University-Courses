@@ -1,0 +1,8 @@
+.greybox {
+    border: 1px solid black;
+    background-color: #a6b8bb;
+    width: 100px;
+    height: 20px;
+}
+
+.red { color: red;}

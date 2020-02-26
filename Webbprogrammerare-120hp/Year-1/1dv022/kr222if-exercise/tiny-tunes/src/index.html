@@ -1,0 +1,122 @@
+<html>
+<head>
+    <title>Exercise - Tiny-tunes</title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+    <template id="step07-template">
+        <li class="listitem"><a href="#" class="red greybox"></a></li>
+    </template>
+</head>
+<body>
+<div>
+    <h2>Good reading...</h2>
+    <ul>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll">https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode">https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild">https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore">https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener">https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener</a></li>
+    </ul>
+</div>
+
+<div id="step01">
+    <h2>Exercise 1</h2>
+    <p>
+        Write some javascript code that creates a text node containing the
+        text "Hello World!" and put this node into the p-element with
+        id="step01_hello"
+    </p>
+    <p id="step01_hello"></p>
+</div>
+<hr />
+
+<div id="step02">
+    <h2>Exercise 2</h2>
+    <p>
+        Create a h2-elemenet containing the text "This is a sub headline" and put it
+        after the p-elemenet containing this text.
+    </p>
+</div>
+<hr />
+
+
+<div id="step03">
+    <h2>Exercise 3</h2>
+    <p>
+        Create a h2-element containing the text "This is a sub headline" and put it
+        after the fifth h2-element (having the text "Exercise 3") in the document.
+    </p>
+</div>
+<hr />
+
+<div id="step04">
+    <h2>Exercise 4</h2>
+    <p>
+        Change the color to "red" on the h2-element above (containing the text "Excercise 4")
+    </p>
+</div>
+<hr />
+
+<div id="step05">
+    <h2>Exercise 5</h2>
+    <p>
+        Create and display a p-element containing the text "You clicked!" when the user
+        clicked the grey box below.
+    </p>
+    <div class="greybox"><a href="#">Click me!</a></div>
+</div>
+<hr />
+
+<div id="step06">
+    <h2>Exercise 6</h2>
+    <p>
+        Use a DocumentFragment to create 10 li-element and add it to the ul with id="list06"
+    </p>
+    <ul id="list06"></ul>
+</div>
+<hr />
+
+<div id="step07">
+    <h2>Exercise 7</h2>
+    <p>
+        Use the template (provided in the document &lt;head&gt; section) to create 5 li-elements with links to pages of your choise. Add the li-elements to the list with id="list07". (It could be the same link in every li-element)
+    </p>
+    <ul id="list07"></ul>
+
+
+</div>
+<hr />
+<div id="step08">
+    <h2>Exercise 8</h2>
+    <p>
+        Write code that takes whats written (if any exists) in the textbox and add it at the bottom to the unordered list as a list item
+    </p>
+    <div id="todolistform">
+        <input type="text" placeholder="Add text here"/>
+        <button>Add to list!</button>
+    </div>
+    <div id="todolist">
+        <ul></ul>
+    </div>
+</div>
+<hr />
+<div id="step09">
+    <h2>Exercise 9</h2>
+    <p>
+        Write a handler that checks that the two usernames are the same. The event should trigger
+        when the user is leaving either of the textboxes (if both have text)
+    </p>
+    <div id="textboxes09">
+        <input type="text" placeholder="Username" /><br />
+        <input type="text" placeholder="Confirm username" />
+    </div>
+    <p class="validation"></p>
+</div>
+
+
+<hr />
+
+<script src="build.js"></script>
+</body>
+</html>
