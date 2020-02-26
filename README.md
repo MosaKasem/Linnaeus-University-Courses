@@ -5,7 +5,7 @@ My assignments and projects handin from Lnu (Linnaeus Unviersity)
 ----
 
 ### Structure
-* ˾ Program name
-    * ˾ Year (e.g. year 1, year 2)
+* ˾ Webbprogrammerare-120hp
+    * ˾ Year-1
         * ˾ Course name
             * ˾ assignment name
