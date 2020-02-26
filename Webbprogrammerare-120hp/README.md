@@ -10,6 +10,31 @@ Under utbildningen läser du kurser där programmering är i fokus. Du kommer at
 
 Utbildningen kan byggas på med ett tredje fördjupningsår inom datavetenskap som förbereder dig för studier på magister- och masternivå. Läs mer om påbyggnadsåret [här](https://lnu.se/program/pabyggnadsutbildning-inom-datavetenskap-kandidatexamen/).
 
-Väljer du att läsa på distans finns inget krav på deltagande vid eventuella fysiska träffar.
-
 ---
+
+### Tekniker / Techniques
+
+Tekniker och nyckelord som du kommer att stöta på i utbildningen är bland annat:
+
+* HTML, 
+* CSS, 
+* JavaScript, 
+* C#, 
+* relationsdatabaser, 
+* dokumentdatabaser, 
+* UML, 
+* design patterns, 
+* versionshantering med git och github, 
+* ASP.NET MVC, 
+* php, 
+* Node.js, 
+* scrum, 
+* REST, 
+* JSON, 
+* Realtids-applikationer, 
+* REST-api:er, 
+* HATEOAS, 
+* Arkitekturer för webbapplikationer, 
+* Web Science, 
+* Web of things, 
+* Internet of things (IoT)
