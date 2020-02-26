@@ -8,7 +8,7 @@ Vi brinner för webbutveckling och för att utbilda dig i, och med hjälp av, de
 
 Under utbildningen läser du kurser där programmering är i fokus. Du kommer att skapa webbapplikationer för olika plattformar med arbetssätt och metoder som är aktuella i branschen. Kodkvalitet, säkerhet, testning och entreprenörskap genomsyrar utbildningen som bedrivs i samarbete med näringslivet.
 
-Utbildningen kan byggas på med ett tredje fördjupningsår inom datavetenskap som förbereder dig för studier på magister- och masternivå. Läs mer om påbyggnadsåret här.
+Utbildningen kan byggas på med ett tredje fördjupningsår inom datavetenskap som förbereder dig för studier på magister- och masternivå. Läs mer om påbyggnadsåret [här](https://lnu.se/program/pabyggnadsutbildning-inom-datavetenskap-kandidatexamen/).
 
 Väljer du att läsa på distans finns inget krav på deltagande vid eventuella fysiska träffar.
 

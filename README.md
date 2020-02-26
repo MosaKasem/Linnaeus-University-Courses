@@ -5,7 +5,7 @@ My assignments and projects handin from Lnu (Linnaeus Unviersity)
 ----
 
 ### Structure
-* ˾ Webbprogrammerare-120hp
-    * ˾ Year-1
-        * ˾ Course name
-            * ˾ assignment name
+* ˾ :mortar_board: Computer Science & Webbprogrammerare-120hp
+    * ˾ :date: Program Year
+        * ˾ :books: Courses
+            * ˾ :heavy_exclamation_mark: Assignments
