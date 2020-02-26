@@ -1,0 +1,44 @@
+{
+  "name": "kr222if-examination-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1dv527/kr222if-examination-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1dv527/kr222if-examination-2/issues"
+  },
+  "homepage": "https://github.com/1dv527/kr222if-examination-2#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "express-sanitizer": "^1.0.5",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.3.1",
+    "jsonwebtoken": "^8.4.0",
+    "jwt-decode": "^2.2.0",
+    "mongoose": "^5.4.13",
+    "mongoose-auto-increment": "^5.0.1",
+    "morgan": "^1.9.1",
+    "node-fetch": "^2.3.0",
+    "node-webhooks": "^1.4.0",
+    "passport": "^0.4.0",
+    "validator": "^10.11.0",
+    "xss": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}

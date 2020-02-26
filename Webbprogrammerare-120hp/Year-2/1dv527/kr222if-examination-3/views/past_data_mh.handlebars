@@ -1,0 +1,19 @@
+<div class='container'>
+  <h2>Data</h2>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Moisture</th>
+        <th>Date</th>
+      </tr>
+    </thead>
+    {{#each mh}}
+    <tbody>
+      <tr>
+        <td>{{isMoist}}</td>
+        <td>{{date}}</td>
+      </tr>
+    </tbody>
+    {{/each}}
+  </table>
+</div>

@@ -1,4 +1,4 @@
-## About the program 120/180hp
+## About the course
 
 • After this course, you should have
 * • an overview of Database Management Systems (DBMSs)

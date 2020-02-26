@@ -1,0 +1,869 @@
+{
+	"info": {
+		"name": "MangoQuid-1dv527-local",
+		"_postman_id": "cdc1c4b9-4546-e7b4-2028-c7d9998d72e8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SetUpAccount",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = pm.response.json();",
+							"",
+							"pm.environment.set(\"token\", data.your_token);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ImZhbHNlIiwiX2lkIjoiNWM3NjU3ZjFkOTBiNzA1ODA0NTBjYTYxIiwidXNlcm5hbWUiOiJub3RhZG1pbiIsInBhc3N3b3JkIjoiJDJhJDEwJDdWakhOQ2NLRWg4ZVlsL0hPL1pWRWVOYnI1WG1Jby9sVS42UmhpbFQwOWhDeU1GUU1UVTIyIiwiX192IjowLCJpYXQiOjE1NTEzNzIzNTEsImV4cCI6MTU1MTQ1ODc1MX0.ygYlFqEhDTH2Y3gNyNxHuq8L7h7V-x2HN305JiNUwM0",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "NotAdmin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/setUpUser",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"setUpUser"
+					]
+				},
+				"description": "Login with username&password to reveive a token"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = pm.response.json();",
+							"",
+							"pm.environment.set(\"token\", data.your_token);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ImZhbHNlIiwiX2lkIjoiNWM3NjU3ZjFkOTBiNzA1ODA0NTBjYTYxIiwidXNlcm5hbWUiOiJub3RhZG1pbiIsInBhc3N3b3JkIjoiJDJhJDEwJDdWakhOQ2NLRWg4ZVlsL0hPL1pWRWVOYnI1WG1Jby9sVS42UmhpbFQwOWhDeU1GUU1UVTIyIiwiX192IjowLCJpYXQiOjE1NTEzNzIzNTEsImV4cCI6MTU1MTQ1ODc1MX0.ygYlFqEhDTH2Y3gNyNxHuq8L7h7V-x2HN305JiNUwM0",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Admin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/auth",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auth"
+					]
+				},
+				"description": "Login with username&password to reveive a token"
+			},
+			"response": []
+		},
+		{
+			"name": "LoginFalseUsername",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ImZhbHNlIiwiX2lkIjoiNWM3NjU3ZjFkOTBiNzA1ODA0NTBjYTYxIiwidXNlcm5hbWUiOiJub3RhZG1pbiIsInBhc3N3b3JkIjoiJDJhJDEwJDdWakhOQ2NLRWg4ZVlsL0hPL1pWRWVOYnI1WG1Jby9sVS42UmhpbFQwOWhDeU1GUU1UVTIyIiwiX192IjowLCJpYXQiOjE1NTEzNzIzNTEsImV4cCI6MTU1MTQ1ODc1MX0.ygYlFqEhDTH2Y3gNyNxHuq8L7h7V-x2HN305JiNUwM0",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "nosuchUser",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/auth",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auth"
+					]
+				},
+				"description": "User doesnt exist"
+			},
+			"response": []
+		},
+		{
+			"name": "LoginFalsePassword",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6ImZhbHNlIiwiX2lkIjoiNWM3NjU3ZjFkOTBiNzA1ODA0NTBjYTYxIiwidXNlcm5hbWUiOiJub3RhZG1pbiIsInBhc3N3b3JkIjoiJDJhJDEwJDdWakhOQ2NLRWg4ZVlsL0hPL1pWRWVOYnI1WG1Jby9sVS42UmhpbFQwOWhDeU1GUU1UVTIyIiwiX192IjowLCJpYXQiOjE1NTEzNzIzNTEsImV4cCI6MTU1MTQ1ODc1MX0.ygYlFqEhDTH2Y3gNyNxHuq8L7h7V-x2HN305JiNUwM0",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Admin",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "falsepassword",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/auth",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auth"
+					]
+				},
+				"description": "password doesnt match"
+			},
+			"response": []
+		},
+		{
+			"name": "webhookRegister",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "payload",
+							"value": "www.webhook.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/webhook/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"webhook",
+						"register"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "webhookRegisterDuplicated",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "payload",
+							"value": "www.webhook.com",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/webhook/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"webhook",
+						"register"
+					]
+				},
+				"description": "Duplicated/already exists"
+			},
+			"response": []
+		},
+		{
+			"name": "webhookRegisterMaliciousScript",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "payload",
+							"value": "<script><h1></script>",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/webhook/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"webhook",
+						"register"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "registerCatch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = pm.response.json();",
+							"",
+							"pm.environment.set(\"fish_id\", data.data.id);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "position",
+							"value": "00,0000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "specie",
+							"value": "addednewfish",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "0000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"value": ".png",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/catch/add",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"catch",
+						"add"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "registerMoreCatch",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							"var data = pm.response.json();",
+							"",
+							"pm.environment.set(\"fish_id\", data.data.id);",
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "position",
+							"value": "00,0000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "specie",
+							"value": "addednewfish",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "0000",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"value": ".png",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/catch/add",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"catch",
+						"add"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "HomePage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}",
+					"host": [
+						"{{url}}"
+					]
+				},
+				"description": "homePage for /api/v1\nv1 = version one"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCatches",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/catch/getAll",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"catch",
+						"getAll"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "getOneCatch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/catch/getOne/{{fish_id}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"catch",
+						"getOne",
+						"{{fish_id}}"
+					]
+				},
+				"description": "retrieve the data for given id of the catch"
+			},
+			"response": []
+		},
+		{
+			"name": "getOneFalseCatch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/catch/getOne/thisDoesntExist",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"catch",
+						"getOne",
+						"thisDoesntExist"
+					]
+				},
+				"description": "retrieve a catch id that doesnt exist"
+			},
+			"response": []
+		},
+		{
+			"name": "getOneUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/user/getUser/admin",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user",
+						"getUser",
+						"admin"
+					]
+				},
+				"description": "get a specific user // data can be shown but due to time constraint, and rewriting code due to what was said in chat about async await."
+			},
+			"response": []
+		},
+		{
+			"name": "getAllUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/user/getallusers",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"user",
+						"getallusers"
+					]
+				},
+				"description": "get all users // data can be shown but due to time constraint, and rewriting code due to what was said in chat about async await."
+			},
+			"response": []
+		},
+		{
+			"name": "webhook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/webhook",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"webhook"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "updateCatch",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6InRydWUiLCJfaWQiOiI1YzY5ZTNhZTZiZDVlODU1NTg2YWNhNzgiLCJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiIkMmEkMTAkT1B3WUJpeXVhN3VWTG9SWmt0YWd1LldQdFo4bHpwYWswaUwyZS4wTjF6dmV3TThuNExiNi4iLCJfX3YiOjAsImlhdCI6MTU1MTQ3NTc2OCwiZXhwIjoxNTUxNTYyMTY4fQ.G8lFDHL6KV7X9iBDHrrdDT7IlX8R4jgBkGvEP0zxrRo",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "position",
+							"value": "11,1111",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "specie",
+							"value": "updatednewfish",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "1111111",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"value": ".jpg",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/catch/update/{{fish_id}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"catch",
+						"update",
+						"{{fish_id}}"
+					]
+				},
+				"description": "Updates a registered fish"
+			},
+			"response": []
+		},
+		{
+			"name": "updateFalseCatch",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6InRydWUiLCJfaWQiOiI1YzY5ZTNhZTZiZDVlODU1NTg2YWNhNzgiLCJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiIkMmEkMTAkT1B3WUJpeXVhN3VWTG9SWmt0YWd1LldQdFo4bHpwYWswaUwyZS4wTjF6dmV3TThuNExiNi4iLCJfX3YiOjAsImlhdCI6MTU1MTQ3NTc2OCwiZXhwIjoxNTUxNTYyMTY4fQ.G8lFDHL6KV7X9iBDHrrdDT7IlX8R4jgBkGvEP0zxrRo",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "position",
+							"value": "11,1111",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "specie",
+							"value": "updatednewfish",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "weight",
+							"value": "1111111",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "imageUrl",
+							"value": ".jpg",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/catch/update/doesntEist",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"catch",
+						"update",
+						"doesntEist"
+					]
+				},
+				"description": "Update a false catch (false === doesnt exist, it doesnt exist in the database, it's unrecognized)"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCatch",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6InRydWUiLCJfaWQiOiI1YzY5ZTNhZTZiZDVlODU1NTg2YWNhNzgiLCJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiIkMmEkMTAkT1B3WUJpeXVhN3VWTG9SWmt0YWd1LldQdFo4bHpwYWswaUwyZS4wTjF6dmV3TThuNExiNi4iLCJfX3YiOjAsImlhdCI6MTU1MTQ1ODg2NSwiZXhwIjoxNTUxNTQ1MjY1fQ.Nrjn0qk-rgVWNPhOivwZeWHOh3L4dQ5vCE05_GEDJhU",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/catch/delete/{{fish_id}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"catch",
+						"delete",
+						"{{fish_id}}"
+					]
+				},
+				"description": "Delete a registered fish"
+			},
+			"response": []
+		},
+		{
+			"name": "deleteFalseCatch",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZG1pbiI6InRydWUiLCJfaWQiOiI1YzY5ZTNhZTZiZDVlODU1NTg2YWNhNzgiLCJ1c2VybmFtZSI6ImFkbWluIiwicGFzc3dvcmQiOiIkMmEkMTAkT1B3WUJpeXVhN3VWTG9SWmt0YWd1LldQdFo4bHpwYWswaUwyZS4wTjF6dmV3TThuNExiNi4iLCJfX3YiOjAsImlhdCI6MTU1MTQ1ODg2NSwiZXhwIjoxNTUxNTQ1MjY1fQ.Nrjn0qk-rgVWNPhOivwZeWHOh3L4dQ5vCE05_GEDJhU",
+						"disabled": true
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/catch/delete/doesntExist",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"catch",
+						"delete",
+						"doesntExist"
+					]
+				},
+				"description": "Delete an unknown id"
+			},
+			"response": []
+		}
+	]
+}
