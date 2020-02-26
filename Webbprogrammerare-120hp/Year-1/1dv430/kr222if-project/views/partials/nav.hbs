@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-lg navbar-light warning-color lighten-5">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Salon Bagdad</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">
+                    <i class="fas fa-home"></i> Hjem
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/Prices">
+                    <i class="fas fa-chart-bar"></i> Priser</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Billeder">
+                    <i class="fas fa-image"></i> Galleri</a>
+            </li>
+
+            {{#if session.user}}
+            <li class="nav-item">
+                <a class="nav-link" href="/Schedule">
+                    <i class="far fa-calendar-alt"></i> Booking Tid</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Logout">
+                    <i class="fas fa-sign-in-alt"></i> Logout</a>
+            </li>
+            {{else}}
+            <li class="nav-item">
+                <a class="nav-link" href="/Register">
+                    <i class="far fa-user"></i> Registrering</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Login">
+                    <i class="fas fa-sign-in-alt"></i> Login</a>
+            </li>
+            {{/if}}
+
+
+        </ul>
+        <!-- Links -->
+
+        {{!-- <form class="form-inline">
+            <div class="md-form mt-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+        </form> --}}
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<script src="/js/onclick.js"></script>

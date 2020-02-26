@@ -1,0 +1,50 @@
+<script>
+    function isAlphaKey(e) {
+        var k;
+        document.all ? k = e.keyCode : k = e.which;
+        return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8);
+    }
+    function extractAlpha(str) {
+        return str.replace(/[^a-zA-Z0-9_]/gi, "");
+    }
+</script>
+
+
+<div class="row makesmaller">
+    <!-- Left -->
+    <div class="col"></div>
+    <!-- Left -->
+
+<div class="col">
+        <div class="navbar-light warning-color">
+            <form id="centerMePlease" action="/Login" method="POST">
+                <p class="h1 text-center mb-4 btn-unique-color-dark">Sign in</p>
+                <!-- Material input email -->
+
+                    
+                    <label class="white-text" for="materialFormLoginEmailEx"><i class="fa fa-user white-text" aria-hidden="true"></i><p>Username</p></label>
+                    <input onkeypress="return isAlphaKey(event)" onblur="this.value=extractAlpha(this.value)" type="username" id="materialFormLoginEmailEx"
+                        class="form-control" name="username">
+
+                        <br>
+                <!-- Material input password -->
+
+                    
+                    <label class="white-text" for="materialFormLoginPasswordEx"><i class="fa fa-lock white-text" aria-hidden="true"></i><p>Password</p></label>
+                    <input type="password" id="materialFormLoginPasswordEx" class="form-control" name="password">
+
+
+                <div class="text-center mt-4">
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                    <button class="btn unique-color-dark" type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+        </div>
+
+
+
+        <!-- right -->
+    <div class="col"></div>
+    <!-- right -->
+</div>

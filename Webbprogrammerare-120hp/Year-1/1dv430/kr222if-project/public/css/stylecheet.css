@@ -1,0 +1,192 @@
+.linksTags {
+    border: 5px solid rgb(88, 88, 88);
+    border-radius: 5px;
+    color: black;
+    background-color: grey;
+    width: 10%;
+    float: left;
+    text-align: center;
+}
+.list-group {
+    margin: auto;
+    background-color: grey;
+    border: 5px solid rgb(88, 88, 88);    
+    /* width: 100%; */
+    height: 25px;
+    margin-top: 2%;
+    text-align: center;
+    padding: 1%;
+}
+a {
+    text-decoration: gold;
+    padding-left: 1%;
+    margin-left: 1%;
+}
+.row {
+    margin: auto;
+    width: 95%;
+}
+body {
+    background-color: black;
+    /* padding: 0%; */
+    /* border: 2px solid grey; */
+    height: 100%;
+    width: auto;
+    /* background-image: url("../image/salong.png"); */
+    background-color: #ffbb33;
+    background-attachment: fixed;
+}
+#make2ndColor {
+    background-color: #1c2331;
+}
+#wrapper {
+    margin: 0 auto;
+    max-width: 100%;
+    text-align: center;
+    /* height: 1425px; */
+    min-height: 100%;
+    position: relative;
+}
+.introduction-text {
+    color: white;
+}
+#footer {
+    text-align: center;
+    position: relative;
+    left:0px;
+    bottom:0px;
+    right:0px;
+    padding:10px;
+    margin: 10px;
+    bottom: 0px;
+}
+#error500 {
+    background-image: url('../image/500error.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#error400 {
+    background-image: url('../image/400error.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 250px;
+}
+#increaseSize {
+    padding-bottom: 10%;
+    padding-top: 5%;
+    width: 30%;
+    height: 10%;
+}
+
+
+html,
+body,
+header,
+.jarallax {
+  height: 100vh;
+}
+
+html,
+body,
+header,
+.intro-2 {
+  height: 100%;
+}
+#centerMePlease {
+    /* width: 50%; */
+    margin: 0 auto;
+}
+
+.parallaxSelf {
+    background-image: url('/../image/parallex.jpg');
+    height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#paddingProcent {
+    padding: 2%;
+}
+.makesmaller {
+    padding: 2%;
+}
+#fixMeDamIt {
+    background-position: center; height: 600px;
+     background-size: cover;
+      width: 95%;
+       padding: 20px;
+       margin: auto;
+}
+
+.zoomAuto {
+    padding: 20px;
+    transition: transform .2s; /* Animation */
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.zoomAuto:hover {
+    background-color: #ffbb33;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+#carouselExampleControls {
+    width: auto;
+    background-color: #1c2331;
+    padding: 10px;
+}
+
+.increaseSize {
+    font-size: 20px;
+}
+.form-control {
+    display: table-cell;
+}
+.fixScheduleSize {
+    width: 0px;
+    float: left;
+}
+#backgroundcolorFix {
+    background-color: #1c2331;
+}
+.backgroundcolorFix {
+    background-color: #ffbb33;
+}
+.fixAndMargin {
+    margin: 10px;
+    padding: 10px;
+    background-color: #ffbb33;
+}
+.fixBackGround {
+    margin: 10%;
+}
+#h1Error {
+    color: #ffbb33;
+    background-color: #1c2331;
+}
+/* FUck This... had to do this in order to pus */
+/* body, html {
+    height: 100%;
+} */
+
+.ChangeTextStyle {
+    font-family: 'Plaster', cursive;
+}
+.ChangeTextStyleTwo {
+    font-family: 'Abril Fatface', cursive;
+}

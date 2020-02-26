@@ -1,0 +1,65 @@
+{{!--
+<script>
+    if ('{{flash}}') {
+        $(document).ready(function () {
+            window.setTimeout(function () {
+                $('.alert-target').fadeTo(500, 0).slideUp(1500, function () {
+                    $(this).remove()
+                })
+            }, 5000)
+        })
+    }
+</script> --}} {{!--
+<script>
+    if ('{{flash}}') {
+        setTimeout(function () {
+            $('#alert-target').fadeOut('fast');
+            $('#defaultFormRegisterNameEx1').text(function (text) {
+                return 'Choose a different name' + text
+            })
+        }, 4000); // <-- time in milliseconds
+    }
+</script> --}}
+<script type="text/javascript">
+
+    function isAlphaKey(e) {
+        var k;
+        document.all ? k = e.keyCode : k = e.which;
+        return ((k > 64 && k < 91) || (k > 96 && k < 123) || k == 8);
+    }
+    function extractAlpha(str) {
+        return str.replace(/[^a-zA-Z0-9_]/gi, "");
+    }
+</script>
+<div class="row makesmaller">
+    <!-- Left -->
+    <div class="col"></div>
+    <!-- Left -->
+
+    <div class="col">
+        <div id="" class="navbar-light warning-color">
+            <form id="centerMePlease" action="/Register" method="POST">
+                <p class="h1 text-center mb-4 btn-unique-color-dark">Sign up</p>
+
+                <!-- Default input name -->
+                <label for="defaultFormRegisterNameEx" class="white-text">Your name</label>
+                <input type="text" onkeypress="return isAlphaKey(event)" onblur="this.value=extractAlpha(this.value)" id="defaultFormRegisterNameEx1"
+                    class="form-control" name="username" id="username">
+                <br>
+
+                <!-- Default input password -->
+                <label for="defaultFormRegisterPasswordEx" class="white-text">Your password</label>
+                <input type="password" id="defaultFormRegisterPasswordEx" class="form-control" name="password" id="password">
+
+                <div class="text-center mt-4">
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                    <button class="btn unique-color-dark" type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- right -->
+    <div class="col"> </div>
+    <!-- right -->
+</div>
+{{!-- <script src="/js/disableFunction.js"></script> --}}

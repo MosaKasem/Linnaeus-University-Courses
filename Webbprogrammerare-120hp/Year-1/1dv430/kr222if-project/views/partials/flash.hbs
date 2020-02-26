@@ -1,0 +1,23 @@
+ {{#if flash }}
+
+<div id="alert-target" class="{{flash.type}}">
+    <p class="bq-title">{{flash.message}}</p>
+</div>
+{{/if}}
+
+<script>
+    //if ('{{flash}}') {
+    //    setTimeout(function () {
+    //        $('#alert-target').fadeOut('fast');
+    //    }, 4000); // <-- time in milliseconds
+    //}
+    if ('{{flash}}') {
+        $(document).ready(function () {
+            window.setTimeout(function () {
+                $('#alert-target').fadeTo(500, 0).slideUp(1500, function () {
+                    $(this).remove()
+                })
+            }, 5000)
+        })
+    }
+</script>

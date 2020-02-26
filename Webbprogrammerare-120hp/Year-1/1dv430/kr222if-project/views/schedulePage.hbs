@@ -1,0 +1,141 @@
+{{!--
+<h1>Schedule your time!</h1>
+<p class="text">Choose a date and time for your schedule</p>
+
+
+<div class="days">Monday></div>
+<div class="days">Tuseday></div>
+<div class="days">Wednesay></div>
+<div class="days">Thursday></div>
+<div class="days">Friday></div>
+<div class="days">Saturday></div>
+
+<footer id="populateGrid"></footer>
+
+
+<div id="enterEventDescription">
+    Event
+    <input id="description">
+    <button onclick="getDescription()">CreateEvent</button>
+</div>
+<h1>hi</h1> --}} {{!--
+<div id="wrapper"> --}} {{#if booked}} {{!--
+    <div class="card"> --}}
+        <div class="card-body">
+            <div class="unique-color-dark border">
+                {{!--
+                <blockquote class="bq-primary"> --}}
+                    <p class="h4 text-center py-4">
+                        <span class="badge amber darken-2">Reserveret Tid
+                            <i class="fas fa-clock"></i>
+                        </span>
+                    </p>
+                    <div class="unique-color-dark">
+                        {{#each booked}}
+                        <p class="h5 text white" style="padding: 5px;">
+                            <span class=" badge amber darken-2">{{this.time}}</span> ur er reserveret ved
+                            <span class=" badge amber darken-2">{{this.user}}</span>
+                            Dette var reserveret
+                            <span class=" badge amber darken-2">{{this.todaysDate}}</span>
+                            {{#if bookedTime}}
+                            <form action="/delete/{{id}}" method="POST">
+                                <button id="btn1" class="btn btn-danger" type="submit" name="name">Slet tidsplan
+                                    <strong>{{this.time}}</strong> ur</button>
+                            </form>
+                            {{/if}}
+                        </p>
+                        {{/each}}
+                    </div>
+                    {{!-- </blockquote> --}}
+            </div>
+        </div>
+        {{!-- </div> --}} {{else}}
+    <div class="card">
+        <div class="unique-color-dark">
+
+            <blockquote class="unique-color-dark display-4">
+                <p class="h4 text-center py-4"></p>
+                <span class="badge green">
+                    <i class="fa fa-edit" aria-hidden="true"></i> Ingen Reserverede Tider</span>
+            </blockquote>
+        </div>
+        {{!-- </div> --}} {{/if}} {{!--
+    <div class="card"> --}}
+        <div class="card-body warning-color">
+            <div class="unique-color-dark">
+                <form class="border" id="myForm" action="/schedule" method="POST">
+
+
+<div class="badge unique-color-dark border" style="padding: 25px;">
+                    <p class="h4 text-center py-4">
+                        <span class="badge unique-color-dark">Booking Hours</span>
+                    </p>
+
+                    <div class="unique-color-dark increaseSize">
+                        <input class="form-control fixScheduleSize" type="radio" name="timeSch" value="9" checked>
+                        <label for="materialFormCardNameEx" class="font-weight-light">09:00 AM</label>
+                    </div>
+
+                    <div class="unique-color-dark increaseSize">
+                        <input class="form-control fixScheduleSize" type="radio" name="timeSch" value="10">
+                        <label for="materialFormCardNameEx" class="font-weight-light">10:00 AM</label>
+                    </div>
+
+                    <div class="unique-color-dark increaseSize">
+                        <input class="form-control fixScheduleSize" type="radio" name="timeSch" value="11">
+                        <label for="materialFormCardNameEx" class="font-weight-light">11:00 AM</label>
+                    </div>
+
+                    <div class="text-center mt-4">
+
+
+                        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                        <button id="btn1" class="btn unique-color-dark" type="submit">Submit</button>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="/js/disableFunction.js" defer></script>
+
+        <script>
+            /**   $(':input').each(function () {
+                   $(this).data('initialValue', $(this).val());
+               });
+   
+               window.onbeforeunload = function () {
+                   var msg = 'You haven\'t saved your changes.';
+                   var isDirty = false;
+   
+                   $(':input').each(function () {
+                       if ($(this).data('initialValue') != $(this).val()) {
+                           
+                           isDirty = true;
+                       }
+                   });
+   
+                   if (isDirty == true) {
+                       return msg;
+                   }
+               };
+               */
+               // $('form input[name="timeSch"]')
+               // $('form input[value]')
+               // console.log($('input'))
+          /**  $('form')
+                .each(function () {
+                    console.log($(this).data('initialValue', $(this).val()))
+                    $(this).data('serialized', $(this).serialize())
+                })
+                .on('change input', function () {
+                    $(this)
+                        .find('input:submit, button:submit')
+                        .prop('disabled', $(this).serialize() == $(this).data('serialized'))
+                        ;
+                })
+                .find('input:submit, button:submit')
+                .prop('disabled', true)
+                ;
+                */
+        </script>

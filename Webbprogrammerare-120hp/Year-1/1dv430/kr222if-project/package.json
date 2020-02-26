@@ -1,0 +1,40 @@
+{
+  "name": "kr222if-project",
+  "version": "1.0.0",
+  "description": "Salong Webb App",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1dv430/kr222if-project.git"
+  },
+  "author": "Mosa Kasem Rasol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1dv430/kr222if-project/issues"
+  },
+  "homepage": "https://github.com/1dv430/kr222if-project#readme",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "csurf": "^1.9.0",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "express-sanitizer": "^1.0.4",
+    "express-secure-handlebars": "^2.1.0",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.1.2",
+    "mocha": "^5.1.1",
+    "mongoose": "^5.0.16",
+    "nodemailer": "^4.6.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
