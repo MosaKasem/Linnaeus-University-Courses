@@ -1,0 +1,33 @@
+{
+  "name": "kr222if-examination",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "npm start --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1dv612/kr222if-examination.git"
+  },
+  "author": "Mosa Kasem Rasol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1dv612/kr222if-examination/issues"
+  },
+  "homepage": "https://github.com/1dv612/kr222if-examination#readme",
+  "dependencies": {
+    "@google-cloud/storage": "^3.1.0",
+    "axios": "^0.19.2",
+    "fetch": "^1.1.0",
+    "nodemailer": "^6.4.2",
+    "react-fetch": "0.0.9",
+    "request-promise-native": "^1.0.7",
+    "superagent": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.0"
+  }
+}
