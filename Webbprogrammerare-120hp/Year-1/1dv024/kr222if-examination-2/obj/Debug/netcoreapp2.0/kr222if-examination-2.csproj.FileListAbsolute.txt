@@ -1,0 +1,11 @@
+C:\Users\Mosa\1dv024\kr222if-examination-2\bin\Debug\netcoreapp2.0\kr222if-examination-2.deps.json
+C:\Users\Mosa\1dv024\kr222if-examination-2\bin\Debug\netcoreapp2.0\kr222if-examination-2.runtimeconfig.json
+C:\Users\Mosa\1dv024\kr222if-examination-2\bin\Debug\netcoreapp2.0\kr222if-examination-2.runtimeconfig.dev.json
+C:\Users\Mosa\1dv024\kr222if-examination-2\bin\Debug\netcoreapp2.0\kr222if-examination-2.dll
+C:\Users\Mosa\1dv024\kr222if-examination-2\bin\Debug\netcoreapp2.0\kr222if-examination-2.pdb
+C:\Users\Mosa\1dv024\kr222if-examination-2\obj\Debug\netcoreapp2.0\kr222if-examination-2.csproj.CoreCompileInputs.cache
+C:\Users\Mosa\1dv024\kr222if-examination-2\obj\Debug\netcoreapp2.0\kr222if-examination-2.AssemblyInfoInputs.cache
+C:\Users\Mosa\1dv024\kr222if-examination-2\obj\Debug\netcoreapp2.0\kr222if-examination-2.AssemblyInfo.cs
+C:\Users\Mosa\1dv024\kr222if-examination-2\obj\Debug\netcoreapp2.0\kr222if-examination-2.dll
+C:\Users\Mosa\1dv024\kr222if-examination-2\obj\Debug\netcoreapp2.0\kr222if-examination-2.pdb
+C:\Users\Mosa\1dv024\kr222if-examination-2\obj\Debug\netcoreapp2.0\kr222if-examination-2.csprojAssemblyReference.cache

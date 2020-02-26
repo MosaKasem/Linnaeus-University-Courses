@@ -1,0 +1,36 @@
+<div id="container" class="alert alert-error">
+    {{!-- <div class="splash-container"> --}}
+        <div class="page-header">
+
+
+            <span class="label label-success">
+                Issue Box
+            </span>
+            {{#if issue}}
+            <ul id="IssuesRendered" class="list-group">
+            {{#each issue}}
+                <li class="list-group-item">
+                    Title: {{title}} <br>
+                    User: {{user}} <br>
+                    Body: {{body}} <br>
+                    Comments: {{comments}} <br>
+                    Created at: {{created_at}} <br>
+                    Updated at: {{updated_at}} <br>
+                </li>
+            {{/each}}
+            </ul>
+            {{else}}
+            <p>No issues!</p>
+            {{/if}}
+            {{!-- <main class="container"> --}}
+            {{!-- </main> --}}
+        </div>
+
+        <div class="card-panel">
+            <h3>Notifications</h3>
+            <ul id="notify" class="breadcrumb">
+        <!--notification panel for webhook... if it ever happens -->
+            </ul>
+        </div>
+    {{!-- </div> --}}
+</div>

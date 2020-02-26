@@ -1,0 +1,42 @@
+{
+  "name": "kr222if-examination-2",
+  "version": "1.0.0",
+  "description": "Assignment-2",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard | snazzy",
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1dv023/kr222if-examination-2.git"
+  },
+  "author": "Mosa Kasem Rasol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1dv023/kr222if-examination-2/issues"
+  },
+  "homepage": "https://github.com/1dv023/kr222if-examination-2#readme",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0",
+    "csurf": "^1.9.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "express-secure-handlebars": "^2.1.0",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.0.0",
+    "helmet": "^3.12.0",
+    "mongodb": "^3.0.2",
+    "mongoose": "^5.0.4",
+    "mongoose-unique-validator": "^2.0.0",
+    "node-inspect": "^1.11.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
+}

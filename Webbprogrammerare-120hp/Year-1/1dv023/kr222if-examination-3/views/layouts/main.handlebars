@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-08">
+    <title>Github API-WSOCKET-HSOCKET</title>
+    <link rel="stylesheet" href="/stylecss.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+
+<body id="container" class="alert">
+    <h1>Github Issue</h1>
+    {{{body}}} 
+    {{>flash}}
+    {{!-- <script>
+var socket = io.connect('http://localhost:3000')
+
+        socket.on('issue', data => {
+            if (data.action === 'opened' || data.action === 'reopened') {
+                console.log(data)
+            }
+        })
+    </script> --}}
+    <script src="/client.js"></script>
+</body>

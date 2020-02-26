@@ -1,0 +1,10 @@
+C:\Users\Mosa\1dv024\kr222if-exercises\exercise-cool-temperature-converter\bin\Debug\netcoreapp2.0\exercise-cool-temperature-converter.deps.json
+C:\Users\Mosa\1dv024\kr222if-exercises\exercise-cool-temperature-converter\bin\Debug\netcoreapp2.0\exercise-cool-temperature-converter.runtimeconfig.json
+C:\Users\Mosa\1dv024\kr222if-exercises\exercise-cool-temperature-converter\bin\Debug\netcoreapp2.0\exercise-cool-temperature-converter.runtimeconfig.dev.json
+C:\Users\Mosa\1dv024\kr222if-exercises\exercise-cool-temperature-converter\bin\Debug\netcoreapp2.0\exercise-cool-temperature-converter.dll
+C:\Users\Mosa\1dv024\kr222if-exercises\exercise-cool-temperature-converter\bin\Debug\netcoreapp2.0\exercise-cool-temperature-converter.pdb
+C:\Users\Mosa\1dv024\kr222if-exercises\exercise-cool-temperature-converter\obj\Debug\netcoreapp2.0\exercise-cool-temperature-converter.csproj.CoreCompileInputs.cache
+C:\Users\Mosa\1dv024\kr222if-exercises\exercise-cool-temperature-converter\obj\Debug\netcoreapp2.0\exercise-cool-temperature-converter.AssemblyInfoInputs.cache
+C:\Users\Mosa\1dv024\kr222if-exercises\exercise-cool-temperature-converter\obj\Debug\netcoreapp2.0\exercise-cool-temperature-converter.AssemblyInfo.cs
+C:\Users\Mosa\1dv024\kr222if-exercises\exercise-cool-temperature-converter\obj\Debug\netcoreapp2.0\exercise-cool-temperature-converter.dll
+C:\Users\Mosa\1dv024\kr222if-exercises\exercise-cool-temperature-converter\obj\Debug\netcoreapp2.0\exercise-cool-temperature-converter.pdb
