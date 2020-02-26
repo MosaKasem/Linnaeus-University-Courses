@@ -1,0 +1,507 @@
+{
+  "typoonSkript.dll": {
+    "c:\\Users\\Mosa\\2dv610\\TTDprojectAssignment1pt2\\typoonSkript\\App.cs": {
+      "Domain.App": {
+        "System.Boolean Domain.App::application()": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "28": 0,
+            "30": 0,
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0,
+            "39": 0,
+            "40": 0,
+            "41": 0,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0,
+            "46": 0,
+            "47": 0
+          },
+          "Branches": [
+            {
+              "Line": 25,
+              "Offset": 161,
+              "EndOffset": 8,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 25,
+              "Offset": 161,
+              "EndOffset": 166,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Domain.App::.ctor(Domain.Calculator,Domain.CalculatorView,Domain.Input)": {
+          "Lines": {
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "20": 1,
+            "21": 1
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\Mosa\\2dv610\\TTDprojectAssignment1pt2\\typoonSkript\\Calculator.cs": {
+      "Domain.Calculator": {
+        "System.Boolean Domain.Calculator::IsEligable(Domain.Operation)": {
+          "Lines": {
+            "19": 4,
+            "22": 4,
+            "23": 4,
+            "24": 4,
+            "27": 0,
+            "28": 0,
+            "30": 4
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 3,
+              "EndOffset": 5,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 3
+            },
+            {
+              "Line": 22,
+              "Offset": 6,
+              "EndOffset": 8,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 2
+            },
+            {
+              "Line": 22,
+              "Offset": 10,
+              "EndOffset": 12,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 22,
+              "Offset": 3,
+              "EndOffset": 18,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 3
+            },
+            {
+              "Line": 22,
+              "Offset": 6,
+              "EndOffset": 18,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 3
+            },
+            {
+              "Line": 22,
+              "Offset": 10,
+              "EndOffset": 18,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 3
+            },
+            {
+              "Line": 22,
+              "Offset": 21,
+              "EndOffset": 23,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 4
+            },
+            {
+              "Line": 22,
+              "Offset": 21,
+              "EndOffset": 28,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Domain.Calculator::SimpleCalculator(System.Double,System.Double,Domain.Operation)": {
+          "Lines": {
+            "32": 2,
+            "35": 2,
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "42": 0,
+            "43": 0,
+            "44": 0,
+            "46": 0,
+            "47": 0,
+            "48": 0,
+            "50": 0,
+            "51": 0,
+            "52": 0,
+            "54": 1,
+            "56": 1
+          },
+          "Branches": [
+            {
+              "Line": 35,
+              "Offset": 4,
+              "EndOffset": 31,
+              "Path": 2,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 35,
+              "Offset": 4,
+              "EndOffset": 55,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 4,
+              "EndOffset": 79,
+              "Path": 4,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 4,
+              "EndOffset": 103,
+              "Path": 3,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 35,
+              "Offset": 4,
+              "EndOffset": 127,
+              "Path": 5,
+              "Ordinal": 5,
+              "Hits": 1
+            },
+            {
+              "Line": 35,
+              "Offset": 4,
+              "EndOffset": 138,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Double Domain.Calculator::Add(System.Double,System.Double)": {
+          "Lines": {
+            "58": 3,
+            "59": 3,
+            "60": 3
+          },
+          "Branches": []
+        },
+        "System.Double Domain.Calculator::Subtract(System.Double,System.Double)": {
+          "Lines": {
+            "62": 2,
+            "63": 2,
+            "64": 2
+          },
+          "Branches": []
+        },
+        "System.Double Domain.Calculator::Multiply(System.Double,System.Double)": {
+          "Lines": {
+            "66": 2,
+            "67": 2,
+            "68": 2
+          },
+          "Branches": []
+        },
+        "System.Double Domain.Calculator::Divide(System.Double,System.Double)": {
+          "Lines": {
+            "70": 1,
+            "71": 1,
+            "72": 1,
+            "73": 1,
+            "76": 0,
+            "77": 0,
+            "79": 1
+          },
+          "Branches": [
+            {
+              "Line": 71,
+              "Offset": 18,
+              "EndOffset": 20,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 71,
+              "Offset": 18,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Domain.Calculator::.ctor(Domain.IConsole,Domain.CalculatorView)": {
+          "Lines": {
+            "13": 20,
+            "14": 20,
+            "15": 20,
+            "16": 20,
+            "17": 20
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\Mosa\\2dv610\\TTDprojectAssignment1pt2\\typoonSkript\\CalculatorView.cs": {
+      "Domain.CalculatorView": {
+        "Domain.Operation Domain.CalculatorView::GetInput()": {
+          "Lines": {
+            "17": 5,
+            "18": 5,
+            "19": 5,
+            "22": 1,
+            "24": 1,
+            "26": 1,
+            "28": 1,
+            "30": 1,
+            "32": 5
+          },
+          "Branches": [
+            {
+              "Line": 19,
+              "Offset": 26,
+              "EndOffset": 57,
+              "Path": 2,
+              "Ordinal": 2,
+              "Hits": 1
+            },
+            {
+              "Line": 19,
+              "Offset": 26,
+              "EndOffset": 61,
+              "Path": 4,
+              "Ordinal": 4,
+              "Hits": 1
+            },
+            {
+              "Line": 19,
+              "Offset": 26,
+              "EndOffset": 65,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            },
+            {
+              "Line": 19,
+              "Offset": 26,
+              "EndOffset": 69,
+              "Path": 6,
+              "Ordinal": 6,
+              "Hits": 1
+            },
+            {
+              "Line": 19,
+              "Offset": 26,
+              "EndOffset": 73,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 19,
+              "Offset": 26,
+              "EndOffset": 73,
+              "Path": 3,
+              "Ordinal": 3,
+              "Hits": 1
+            },
+            {
+              "Line": 19,
+              "Offset": 26,
+              "EndOffset": 73,
+              "Path": 5,
+              "Ordinal": 5,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Domain.CalculatorView::PresentResult(System.Double)": {
+          "Lines": {
+            "34": 0,
+            "35": 0,
+            "36": 0
+          },
+          "Branches": []
+        },
+        "System.Double Domain.CalculatorView::ReturnValue(System.String)": {
+          "Lines": {
+            "38": 1,
+            "39": 1,
+            "40": 1,
+            "41": 0
+          },
+          "Branches": []
+        },
+        "System.Double Domain.CalculatorView::UserInput(System.String)": {
+          "Lines": {
+            "44": 1,
+            "45": 2,
+            "46": 0,
+            "47": 0
+          },
+          "Branches": [
+            {
+              "Line": 45,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 45,
+              "Offset": 14,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Void Domain.CalculatorView::.ctor(Domain.IConsole)": {
+          "Lines": {
+            "12": 32,
+            "13": 32,
+            "14": 32,
+            "15": 32
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\Mosa\\2dv610\\TTDprojectAssignment1pt2\\typoonSkript\\ConsoleWrapper.cs": {
+      "Domain.ConsoleWrapper": {
+        "System.String Domain.ConsoleWrapper::ReadLine()": {
+          "Lines": {
+            "17": 0,
+            "18": 0,
+            "19": 0
+          },
+          "Branches": []
+        },
+        "System.Void Domain.ConsoleWrapper::WriteLine(System.String)": {
+          "Lines": {
+            "22": 0,
+            "23": 0,
+            "24": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\Mosa\\2dv610\\TTDprojectAssignment1pt2\\typoonSkript\\Input.cs": {
+      "Domain.Input": {
+        "System.Boolean Domain.Input::Exit()": {
+          "Lines": {
+            "13": 2,
+            "14": 2,
+            "15": 2,
+            "16": 2,
+            "17": 3,
+            "18": 1,
+            "19": 2
+          },
+          "Branches": [
+            {
+              "Line": 17,
+              "Offset": 48,
+              "EndOffset": 50,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 1
+            },
+            {
+              "Line": 17,
+              "Offset": 48,
+              "EndOffset": 54,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 1
+            }
+          ]
+        },
+        "System.Void Domain.Input::.ctor(Domain.IConsole)": {
+          "Lines": {
+            "8": 4,
+            "9": 4,
+            "10": 4,
+            "11": 4
+          },
+          "Branches": []
+        }
+      }
+    },
+    "c:\\Users\\Mosa\\2dv610\\TTDprojectAssignment1pt2\\typoonSkript\\Program.cs": {
+      "Domain.Program": {
+        "System.Void Domain.Program::Main(System.String[])": {
+          "Lines": {
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0,
+            "20": 0,
+            "21": 0,
+            "22": 0,
+            "23": 0,
+            "24": 0,
+            "25": 0,
+            "27": 0
+          },
+          "Branches": [
+            {
+              "Line": 21,
+              "Offset": 54,
+              "EndOffset": 42,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 21,
+              "Offset": 54,
+              "EndOffset": 56,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

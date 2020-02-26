@@ -1,0 +1,22 @@
+{
+  "name": "TTDprojectAssignment1pt2",
+  "version": "1.0.0",
+  "description": "* *dotnet run* inside typoonSkript folder to run the app\r ### Run \r * *dotnet test* inside typoonSkript TTD to run the tests",
+  "main": "index.js",
+  "scripts": {
+    "start": "dotnet run",
+"test": "cd typoonSkriptTTD && dotnet test && cd ..",
+"coverage": "cd typoonSkriptTTD && dotnet test /p:CollectCoverage=true && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MosaKasem/typoonSkript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MosaKasem/typoonSkript/issues"
+  },
+  "homepage": "https://github.com/MosaKasem/typoonSkript#readme"
+}

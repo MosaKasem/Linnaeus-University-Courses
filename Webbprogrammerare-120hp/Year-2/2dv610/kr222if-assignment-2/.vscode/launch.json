@@ -1,0 +1,59 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HTTPServerConsole<MyWebServer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "se.lnu.http.HTTPServerConsole",
+            "projectName": "MyWebServer",
+            "args": ["2000", "bin\\se\\lnu\\http\\resources"]
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ASMifierClassVisitor<MyWebServer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "org.mockito.asm.util.ASMifierClassVisitor",
+            "projectName": "MyWebServer",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CheckClassAdapter<MyWebServer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "org.mockito.asm.util.CheckClassAdapter",
+            "projectName": "MyWebServer",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TraceClassVisitor<MyWebServer>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "org.mockito.asm.util.TraceClassVisitor",
+            "projectName": "MyWebServer",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "Debug (Attach)",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": 0
+        }
+    ]
+}
