@@ -19,11 +19,12 @@ To login:
 
 --- 
 
-About the course:
+## About the course:
 
+```
 Kursens syfte är att ge studenten grundläggande kunskaper inom kvalitet i källkod.
 Efter avslutad kurs förväntas studenten:
-```
+
     kunna förklara grundläggande begrepp så som krav, kvalitet, komplexitet, 
     kodförståelse, teknisk skuld, läsbarhet, och underhållbarhet.
     självständigt kunna programmera, skriva om och testa källkod utifrån krav med 
@@ -33,3 +34,21 @@ Efter avslutad kurs förväntas studenten:
     kunna återberätta, kritiskt granska och värdera information i litteratur om 
     mjukvarukvalitet.
 ```
+
+---
+
+### Lectures: 
+    Readability and Understandability
+    Programming for the future programmer
+    Clean Code Chapter 2
+    Information content in identifiers    
+    Functions, Clean Code Chapter 3
+    Build Guess the Number
+    Clean Code, Comments Chapter 4
+    Continue on the primes example
+    Clean Code Chapter 5
+    L2 tips and tricks
+    Clean Code Chapter 6, Objects
+    Clean Code Chapter 7, Error Handling
+
+### Code Refactoring [Video](https://www.youtube.com/watch?v=D4auWwMsEnY&index=2&t=3s)
