@@ -1,0 +1,73 @@
+{
+  "version": "0",
+  "id": "218ee0e8-b889-8191-bd3d-4dbd55288a1f",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.s3",
+  "account": "364107138694",
+  "time": "2019-04-13T16:54:19Z",
+  "region": "eu-north-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.05",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROAVJRT2A2DJMN7WLFRB:presignedURL",
+      "arn": "arn:aws:sts::364107138694:assumed-role/test/presignedURL",
+      "accountId": "364107138694",
+      "accessKeyId": "ASIAVJRT2A2DEYQZPP5C",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROAVJRT2A2DJMN7WLFRB",
+          "arn": "arn:aws:iam::364107138694:role/test",
+          "accountId": "364107138694",
+          "userName": "test"
+        },
+        "attributes": {
+          "creationDate": "2019-04-13T16:54:17Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "eventTime": "2019-04-13T16:54:19Z",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "PutObject",
+    "awsRegion": "eu-north-1",
+    "sourceIPAddress": "84.216.235.56",
+    "userAgent": "[Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:66.0) Gecko/20100101 Firefox/66.0]",
+    "requestParameters": {
+      "X-Amz-Date": "20190413T165418Z",
+      "bucketName": "stockholm.s3bucket.infomaker",
+      "X-Amz-Algorithm": "AWS4-HMAC-SHA256",
+      "X-Amz-SignedHeaders": "host",
+      "Host": "sdlfkjsdlkfjsdf.s3.eu-north-1.amazonaws.com",
+      "X-Amz-Expires": "300",
+      "key": "IMG_4328.HEIC"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "SignatureVersion": "SigV4",
+      "CipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+      "bytesTransferredIn": 30122,
+      "AuthenticationMethod": "QueryString",
+      "x-amz-id-2": "KUYKkRMrmkh4fbTQXean3akGcm4RxdqzfxLnN/jgxEojFVfrczi06pKIxsZ8ZCBYYdBF7R2NelA=",
+      "bytesTransferredOut": 0
+    },
+    "requestID": "23F99D75C8DA89A1",
+    "eventID": "4909b066-e35d-4c33-820b-620b781cb76b",
+    "readOnly": false,
+    "resources": [
+      {
+        "type": "AWS::S3::Object",
+        "ARN": "arn:aws:s3:::sdlfkjsdlkfjsdf/Screenshot from 2019-04-12 14-00-54.png"
+      },
+      {
+        "accountId": "364107138694",
+        "type": "AWS::S3::Bucket",
+        "ARN": "arn:aws:s3:::sdlfkjsdlkfjsdf"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "364107138694"
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "detail": {
+        "requestParameters": {
+            "X-Amz-Date": "20190413T165418Z",
+            "bucketName": "superduperbuckethere",
+            "X-Amz-Algorithm": "AWS4-HMAC-SHA256",
+            "X-Amz-SignedHeaders": "host",
+            "Host": "kellarntestagain.s3.eu-north-1.amazonaws.com",
+            "X-Amz-Expires": "300",
+            "key": "Motorboat_at_Kankaria_lake.JPG"
+          }
+    },
+    "exif": {
+        "mineType":"image/nagot",
+        "meraData": "data för nagot",
+        "3Datan":"har ar det mera data"
+    },
+    "imgRec": {
+      "någonInfo":"har ska det vara mera information",
+      "two": "lite mera data",
+      "three":"ar kommer det ocksa vara data"
+    }
+  }
