@@ -1,0 +1,79 @@
+{
+  "version": "0",
+  "id": "cd0b43f2-2b93-a61e-b4eb-98c736eea036",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.s3",
+  "account": "596626276812",
+  "time": "2019-05-21T13:08:30Z",
+  "region": "eu-west-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.05",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "596626276812",
+      "arn": "arn:aws:iam::596626276812:root",
+      "accountId": "596626276812",
+      "accessKeyId": "ASIAYV2NSQHGEUECL55A",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2019-05-21T08:09:43Z",
+          "mfaAuthenticated": "false"
+        }
+      },
+      "invokedBy": "signin.amazonaws.com"
+    },
+    "eventTime": "2019-05-21T13:08:30Z",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "PutObject",
+    "awsRegion": "eu-west-1",
+    "sourceIPAddress": "194.47.188.32",
+    "userAgent": "signin.amazonaws.com",
+    "requestParameters": {
+<<<<<<< HEAD
+      "X-Amz-Date": "20190521T130825Z",
+      "bucketName": "superduperbuckethere",
+=======
+      "X-Amz-Date": "20190413T165418Z",
+      "bucketName": "sdlfkjsdlkfjsdfzaerrasdf",
+>>>>>>> 4f7ab738ef43c8f87742d652765140394317bb8f
+      "X-Amz-Algorithm": "AWS4-HMAC-SHA256",
+      "x-amz-acl": "private",
+      "X-Amz-SignedHeaders": "content-md5;content-type;host;x-amz-acl;x-amz-storage-class",
+      "Host": "s3.eu-west-1.amazonaws.com",
+      "X-Amz-Expires": "300",
+<<<<<<< HEAD
+      "key": "upload/blue-sky-cloudiness-clouds-449751.jpg",
+      "x-amz-storage-class": "STANDARD"
+=======
+      "key": "File.png"
+>>>>>>> 4f7ab738ef43c8f87742d652765140394317bb8f
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "SignatureVersion": "SigV4",
+      "CipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+      "bytesTransferredIn": 5367642,
+      "AuthenticationMethod": "QueryString",
+      "x-amz-id-2": "HMbdHDsc9CcZEwWUbJDgKMdYV9vTHTz8rn09JfJzGUrP8yvdhLzcqyxOT5be6XTER3xcNtmAnuc=",
+      "bytesTransferredOut": 0
+    },
+    "requestID": "31766E7C061E81B3",
+    "eventID": "03d79189-4de1-4cc8-8d2c-ee3d0394e8c8",
+    "readOnly": false,
+    "resources": [
+      {
+        "type": "AWS::S3::Object",
+        "ARN": "arn:aws:s3:::superduperbuckethere/upload/blue-sky-cloudiness-clouds-449751.jpg"
+      },
+      {
+        "accountId": "596626276812",
+        "type": "AWS::S3::Bucket",
+        "ARN": "arn:aws:s3:::superduperbuckethere"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "596626276812"
+  },
+  "ext": ".jpg"
+}

@@ -1,0 +1,17 @@
+{
+    "TableName": "MusicCollection2",
+    "KeySchema": [
+      { "AttributeName": "id", "KeyType": "HASH" },
+      { "AttributeName": "ip", "KeyType": "RANGE" }
+    ],
+    "AttributeDefinitions": [
+      { "AttributeName": "id", "AttributeType": "S" },
+      { "AttributeName": "ip", "AttributeType": "S" },
+      { "AttributeName": "filename", "AttributeType": "S" },
+      { "AttributeName": "msg", "AttributeType": "S" }
+    ],
+    "ProvisionedThroughput": {
+      "ReadCapacityUnits": 5,
+      "WriteCapacityUnits": 5
+    }
+}

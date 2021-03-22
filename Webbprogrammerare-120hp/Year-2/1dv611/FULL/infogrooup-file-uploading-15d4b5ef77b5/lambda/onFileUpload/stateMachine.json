@@ -1,0 +1,150 @@
+{
+    "Comment": "File upload state machine.",
+    "StartAt": "imageTypeCheck",
+    "States": {
+      "imageTypeCheck": {
+        "Type": "Task",
+        "Resource": "",
+        "Next":"ChoiceImageTypeCheck",
+        "Catch":  [
+          {
+            "ErrorEquals": ["InvalidImage"],
+            "ResultPath": null,
+            "Next": "deleteFile"
+          }
+         ]
+        },
+        "ChoiceImageTypeCheck": {
+          "Type":"Choice",
+          "Choices": [
+            {
+              "Variable":"$.ext",
+              "StringEquals": ".jpg",
+              "Next":"renameFileToHash"
+            },
+            {
+              "Variable":"$.ext",
+              "StringEquals": ".png",
+              "Next":"renameFileToHash"
+            },
+            {
+              "Variable":"$.ext",
+              "StringEquals": ".gif",
+              "Next":"renameFileToHash"
+            },
+            {
+             "Variable":"$.ext",
+              "StringEquals":".heic",
+              "Next":"heicToJpg"
+            },
+            {
+             "Variable":"$.ext",
+              "StringEquals":".heif",
+              "Next":"heicToJpg"
+            }
+          ]
+        },
+        "deleteFile": {
+          "Type": "Task",
+          "Resource": "",
+          "Next": "finally"
+      },
+      "heicToJpg": {
+          "Type": "Task",
+          "Resource": "",
+          "Next":  "renameFileToHash",
+          "Retry" : [
+            {
+              "ErrorEquals": [ "States.ALL" ],
+              "IntervalSeconds": 1,
+              "MaxAttempts": 3,
+              "BackoffRate": 1.5
+            }
+          ]
+      },
+      "renameFileToHash": {
+        "Type": "Task",
+        "Resource": "",
+        "Catch":  [
+          {
+            "ErrorEquals": ["imageAlreadyExists"],
+            "ResultPath": null,
+            "Next": "deleteFile"
+          }
+         ],
+       "Next": "ChoiceRenameFileToHash"
+     },
+      "ChoiceRenameFileToHash": {
+        "Type":"Choice",
+        "Choices": [
+          {
+            "Variable":"$.msg",
+            "StringEquals": "duplicate",
+            "Next":"deleteFile"
+          }],
+          "Default": "ParallelProcess"
+      },
+      "ParallelProcess": {
+        "Type": "Parallel",
+        "Next": "storeMetaData",
+         "Branches": [
+           {
+               "StartAt": "createThumbnail",
+               "States": {
+                 "createThumbnail": {
+                   "Type": "Task",
+                   "Resource":"",
+                   "End": true,
+                   "Retry" : [
+                      {
+                        "ErrorEquals": [ "States.ALL" ],
+                        "IntervalSeconds": 1,
+                        "MaxAttempts": 3,
+                        "BackoffRate": 1.5
+                      }
+                    ]
+                  }
+                }
+              },
+           {
+             "StartAt": "exif",
+             "States": {
+               "exif": {
+                 "Type": "Task",
+                 "Resource":"",
+                 "End": true,
+                 "Retry" : [
+                    {
+                      "ErrorEquals": [ "States.ALL" ],
+                      "IntervalSeconds": 1,
+                      "MaxAttempts": 3,
+                      "BackoffRate": 1.5
+                    }
+                  ]
+                }
+              }
+            },
+            {
+               "StartAt": "imageRecognition",
+               "States": {
+                 "imageRecognition": {
+                   "Type": "Task",
+                   "Resource":"",
+                   "End": true
+                  }
+                }
+              }
+          ]
+       },
+       "storeMetaData": {
+          "Type": "Task",
+          "Resource": "",
+          "Next": "finally"
+      },
+      "finally" : {
+        "Type": "Task",
+        "Resource": "",
+        "End": true
+    }
+  }   
+}

@@ -1,0 +1,32 @@
+{
+  "Records": [
+    {
+      "eventVersion": "2.1",
+      "eventSource": "aws:s3",
+      "awsRegion": "eu-north-1",
+      "eventTime": "2019-04-18T11: 12: 24.303Z",
+      "eventName": "ObjectCreated:Put",
+      "userIdentity": { "principalId": "A1TOUM76RA64RX" },
+      "requestParameters": { "sourceIPAddress": "194.47.188.32" },
+      "responseElements": {
+        "x-amz-request-id": "7A467F795441CB92",
+        "x-amz-id-2": "LZW1aJZI+6I2BK+MP/MLFWAOuNFOHHh/LmQRc9wyLSwHh5PF83dWcWeroktQkeeuoyuQ7478jT8="
+      },
+      "s3": {
+        "s3SchemaVersion": "1.0",
+        "configurationId": "MmZlMTZmNDEtNzkwNS00MzFlLTk2OWQtZmU4YjhjZmJmYmRl",
+        "bucket": {
+          "name": "stockholm.s3bucket.infomaker",
+          "ownerIdentity": { "principalId": "A1TOUM76RA64RX" },
+          "arn": "arn:aws:s3: : :stockholm.s3bucket.infomaker"
+        },
+        "object": {
+          "key": "upload/teeest.jpg",
+          "size": 17849,
+          "eTag": "d230d317147c7911971b59e46a57b621",
+          "sequencer": "005CB85B983F18A826"
+        }
+      }
+    }
+  ]
+}

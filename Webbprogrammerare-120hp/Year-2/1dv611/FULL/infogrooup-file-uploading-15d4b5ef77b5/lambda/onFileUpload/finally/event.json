@@ -1,0 +1,68 @@
+{
+  "version": "0",
+  "id": "bc642ac9-75b4-d2bf-8a01-fff977f8372d",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.s3",
+  "account": "364107138694",
+  "time": "2019-05-26T16:40:15Z",
+  "region": "eu-west-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.05",
+    "userIdentity": {
+      "type": "AssumedRole",
+      "principalId": "AROAVJRT2A2DJMN7WLFRB:presignedURL",
+      "arn": "arn:aws:sts::364107138694:assumed-role/test/presignedURL",
+      "accountId": "364107138694",
+      "sessionContext": {
+        "sessionIssuer": {
+          "type": "Role",
+          "principalId": "AROAVJRT2A2DJMN7WLFRB",
+          "arn": "arn:aws:iam::364107138694:role/test",
+          "accountId": "364107138694",
+          "userName": "test"
+        },
+        "attributes": {
+          "creationDate": "2019-05-26T15:33:24Z",
+          "mfaAuthenticated": "false"
+        }
+      }
+    },
+    "eventTime": "2019-05-26T16:40:15Z",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "PutObject",
+    "awsRegion": "eu-west-1",
+    "sourceIPAddress": "85.226.120.201",
+    "userAgent": "[Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:67.0) Gecko/20100101 Firefox/67.0]",
+    "requestParameters": {
+      "bucketName": "infomakeruploadireland",
+      "Host": "s3.eu-west-1.amazonaws.com",
+      "key": "upload/Screenshot from 2019-05-26 18-11-13.png"
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "CipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+      "bytesTransferredIn": 11402,
+      "x-amz-id-2": "akfyVbQLvAqOL4v2kD6NW1FXiBUkHGNcExEPcbVG0fXS8JyN/x1cfkrUP91U259ZVFLGF1PueBI=",
+      "bytesTransferredOut": 0
+    },
+    "requestID": "E53B8AE86184CD16",
+    "eventID": "297378b6-24af-40fc-927f-969bfce43afd",
+    "readOnly": false,
+    "resources": [
+      {
+        "type": "AWS::S3::Object",
+        "ARN": "arn:aws:s3:::infomakeruploadireland/upload/Screenshot from 2019-05-26 18-11-13.png"
+      },
+      {
+        "accountId": "364107138694",
+        "type": "AWS::S3::Bucket",
+        "ARN": "arn:aws:s3:::infomakeruploadireland"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "364107138694"
+  },
+  "msg": "duplicate",
+  "ext": ".png"
+}

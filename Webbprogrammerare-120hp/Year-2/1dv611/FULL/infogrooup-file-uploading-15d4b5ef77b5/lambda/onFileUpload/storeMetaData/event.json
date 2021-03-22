@@ -1,0 +1,269 @@
+[
+  {
+    "version": "0",
+    "id": "8d1155ab-db88-2c10-3beb-de2a2e8e371f",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.s3",
+    "account": "596626276812",
+    "time": "2019-05-09T12:28:13Z",
+    "region": "eu-west-1",
+    "resources": [],
+    "detail": {
+      "eventVersion": "1.05",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "596626276812",
+        "arn": "arn:aws:iam::596626276812:root",
+        "accountId": "596626276812",
+        "accessKeyId": "ASIAYV2NSQHGKEM2HL67",
+        "sessionContext": {
+          "attributes": {
+            "creationDate": "2019-05-09T08:18:15Z",
+            "mfaAuthenticated": "false"
+          }
+        },
+        "invokedBy": "signin.amazonaws.com"
+      },
+      "eventTime": "2019-05-09T12:28:13Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "PutObject",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "194.47.188.32",
+      "userAgent": "signin.amazonaws.com",
+      "requestParameters": {
+        "X-Amz-Date": "20190509T122813Z",
+        "bucketName": "superduperbuckethere",
+        "X-Amz-Algorithm": "AWS4-HMAC-SHA256",
+        "x-amz-acl": "private",
+        "X-Amz-SignedHeaders": "content-md5;content-type;host;x-amz-acl;x-amz-storage-class",
+        "Host": "s3.eu-west-1.amazonaws.com",
+        "X-Amz-Expires": "300",
+        "key": "b032eea9c42b1334ce7dd0d720b54f803be822d8d4f8816e6ce103c7af746c3b.png",
+        "x-amz-storage-class": "STANDARD",
+        "thumbnail": "b032eea9c42b1334ce7dd0d720b54f803be822d8d4f8816e6ce103c7af746c3b_thumbnail.png"
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+        "bytesTransferredIn": 165534,
+        "AuthenticationMethod": "QueryString",
+        "x-amz-id-2": "p4S0E/DVZsnC2ab/aTppol/FMTr7F2BkJc89rXfbHFkQTUf2pVj6D55ZTi47vfximKKKu6nFwCo=",
+        "bytesTransferredOut": 0
+      },
+      "requestID": "96B98ADBE301139E",
+      "eventID": "e0bba611-5fd3-4747-abb7-69023a6bc235",
+      "readOnly": false,
+      "resources": [
+        {
+          "type": "AWS::S3::Object",
+          "ARN": "arn:aws:s3:::superduperbuckethere/upload/finallygreen.png"
+        },
+        {
+          "accountId": "596626276812",
+          "type": "AWS::S3::Bucket",
+          "ARN": "arn:aws:s3:::superduperbuckethere"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "596626276812"
+    },
+    "ext": ".png"
+  },
+  {
+    "version": "0",
+    "id": "8d1155ab-db88-2c10-3beb-de2a2e8e371f",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.s3",
+    "account": "596626276812",
+    "time": "2019-05-09T12:28:13Z",
+    "region": "eu-west-1",
+    "resources": [],
+    "detail": {
+      "eventVersion": "1.05",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "596626276812",
+        "arn": "arn:aws:iam::596626276812:root",
+        "accountId": "596626276812",
+        "accessKeyId": "ASIAYV2NSQHGKEM2HL67",
+        "sessionContext": {
+          "attributes": {
+            "creationDate": "2019-05-09T08:18:15Z",
+            "mfaAuthenticated": "false"
+          }
+        },
+        "invokedBy": "signin.amazonaws.com"
+      },
+      "eventTime": "2019-05-09T12:28:13Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "PutObject",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "194.47.188.32",
+      "userAgent": "signin.amazonaws.com",
+      "requestParameters": {
+        "X-Amz-Date": "20190509T122813Z",
+        "bucketName": "superduperbuckethere",
+        "X-Amz-Algorithm": "AWS4-HMAC-SHA256",
+        "x-amz-acl": "private",
+        "X-Amz-SignedHeaders": "content-md5;content-type;host;x-amz-acl;x-amz-storage-class",
+        "Host": "s3.eu-west-1.amazonaws.com",
+        "X-Amz-Expires": "300",
+        "key": "b032eea9c42b1334ce7dd0d720b54f803be822d8d4f8816e6ce103c7af746c3b.png",
+        "x-amz-storage-class": "STANDARD"
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+        "bytesTransferredIn": 165534,
+        "AuthenticationMethod": "QueryString",
+        "x-amz-id-2": "p4S0E/DVZsnC2ab/aTppol/FMTr7F2BkJc89rXfbHFkQTUf2pVj6D55ZTi47vfximKKKu6nFwCo=",
+        "bytesTransferredOut": 0
+      },
+      "requestID": "96B98ADBE301139E",
+      "eventID": "e0bba611-5fd3-4747-abb7-69023a6bc235",
+      "readOnly": false,
+      "resources": [
+        {
+          "type": "AWS::S3::Object",
+          "ARN": "arn:aws:s3:::superduperbuckethere/upload/finallygreen.png"
+        },
+        {
+          "accountId": "596626276812",
+          "type": "AWS::S3::Bucket",
+          "ARN": "arn:aws:s3:::superduperbuckethere"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "596626276812"
+    },
+    "ext": ".png",
+    "exif": [
+      {
+        "SourceFile": "/tmp/b032eea9c42b1334ce7dd0d720b54f803be822d8d4f8816e6ce103c7af746c3b.png",
+        "ExifToolVersion": 11.34,
+        "FileName": "b032eea9c42b1334ce7dd0d720b54f803be822d8d4f8816e6ce103c7af746c3b.png",
+        "Directory": "/tmp",
+        "FileSize": "162 kB",
+        "FileModifyDate": "2019:05:09 12:28:17+00:00",
+        "FileAccessDate": "2019:05:09 12:28:17+00:00",
+        "FileInodeChangeDate": "2019:05:09 12:28:17+00:00",
+        "FilePermissions": "rw-rw-r--",
+        "FileType": "PNG",
+        "FileTypeExtension": "png",
+        "MIMEType": "image/png",
+        "ImageWidth": 1924,
+        "ImageHeight": 1043,
+        "BitDepth": 8,
+        "ColorType": "RGB",
+        "Compression": "Deflate/Inflate",
+        "Filter": "Adaptive",
+        "Interlace": "Noninterlaced",
+        "SRGBRendering": "Perceptual",
+        "Gamma": 2.2,
+        "PixelsPerUnitX": 3779,
+        "PixelsPerUnitY": 3779,
+        "PixelUnits": "meters",
+        "ImageSize": "1924x1043",
+        "Megapixels": 2
+      }
+    ]
+  },
+  {
+    "version": "0",
+    "id": "8d1155ab-db88-2c10-3beb-de2a2e8e371f",
+    "detail-type": "AWS API Call via CloudTrail",
+    "source": "aws.s3",
+    "account": "596626276812",
+    "time": "2019-05-09T12:28:13Z",
+    "region": "eu-west-1",
+    "resources": [],
+    "detail": {
+      "eventVersion": "1.05",
+      "userIdentity": {
+        "type": "Root",
+        "principalId": "596626276812",
+        "arn": "arn:aws:iam::596626276812:root",
+        "accountId": "596626276812",
+        "accessKeyId": "ASIAYV2NSQHGKEM2HL67",
+        "sessionContext": {
+          "attributes": {
+            "creationDate": "2019-05-09T08:18:15Z",
+            "mfaAuthenticated": "false"
+          }
+        },
+        "invokedBy": "signin.amazonaws.com"
+      },
+      "eventTime": "2019-05-09T12:28:13Z",
+      "eventSource": "s3.amazonaws.com",
+      "eventName": "PutObject",
+      "awsRegion": "eu-west-1",
+      "sourceIPAddress": "194.47.188.32",
+      "userAgent": "signin.amazonaws.com",
+      "requestParameters": {
+        "X-Amz-Date": "20190509T122813Z",
+        "bucketName": "superduperbuckethere",
+        "X-Amz-Algorithm": "AWS4-HMAC-SHA256",
+        "x-amz-acl": "private",
+        "X-Amz-SignedHeaders": "content-md5;content-type;host;x-amz-acl;x-amz-storage-class",
+        "Host": "s3.eu-west-1.amazonaws.com",
+        "X-Amz-Expires": "300",
+        "key": "b032eea9c42b1334ce7dd0d720b54f803be822d8d4f8816e6ce103c7af746c3b.png",
+        "x-amz-storage-class": "STANDARD"
+      },
+      "responseElements": null,
+      "additionalEventData": {
+        "SignatureVersion": "SigV4",
+        "CipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+        "bytesTransferredIn": 165534,
+        "AuthenticationMethod": "QueryString",
+        "x-amz-id-2": "p4S0E/DVZsnC2ab/aTppol/FMTr7F2BkJc89rXfbHFkQTUf2pVj6D55ZTi47vfximKKKu6nFwCo=",
+        "bytesTransferredOut": 0
+      },
+      "requestID": "96B98ADBE301139E",
+      "eventID": "e0bba611-5fd3-4747-abb7-69023a6bc235",
+      "readOnly": false,
+      "resources": [
+        {
+          "type": "AWS::S3::Object",
+          "ARN": "arn:aws:s3:::superduperbuckethere/upload/finallygreen.png"
+        },
+        {
+          "accountId": "596626276812",
+          "type": "AWS::S3::Bucket",
+          "ARN": "arn:aws:s3:::superduperbuckethere"
+        }
+      ],
+      "eventType": "AwsApiCall",
+      "recipientAccountId": "596626276812"
+    },
+    "ext": ".png",
+    "imgRec": [
+      {
+        "Name": "Text",
+        "Confidence": 94.81954193115234
+      },
+      {
+        "Name": "File",
+        "Confidence": 94.77362060546875
+      },
+      {
+        "Name": "Menu",
+        "Confidence": 94.43366241455078
+      },
+      {
+        "Name": "Webpage",
+        "Confidence": 78.1259536743164
+      },
+      {
+        "Name": "Page",
+        "Confidence": 62.96296310424805
+      },
+      {
+        "Name": "Word",
+        "Confidence": 50.06284713745117
+      }
+    ]
+  }
+]

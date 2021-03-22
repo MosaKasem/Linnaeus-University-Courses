@@ -1,0 +1,72 @@
+{
+  "version": "0",
+  "id": "bf381cce-650d-1f04-7373-1fe91f0b81fb",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.s3",
+  "account": "596626276812",
+  "time": "2019-04-28T13:15:16Z",
+  "region": "eu-north-1",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.05",
+    "userIdentity": {
+      "type": "Root",
+      "principalId": "596626276812",
+      "arn": "arn:aws:iam::596626276812:root",
+      "accountId": "596626276812",
+      "accessKeyId": "ASIAYV2NSQHGLZM6LYHD",
+      "sessionContext": {
+        "attributes": {
+          "creationDate": "2019-04-28T07:06:42Z",
+          "mfaAuthenticated": "false"
+        }
+      },
+      "invokedBy": "signin.amazonaws.com"
+    },
+    "eventTime": "2019-04-28T13:15:16Z",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "PutObject",
+    "awsRegion": "eu-west-1",
+    "sourceIPAddress": "194.47.188.32",
+    "userAgent": "signin.amazonaws.com",
+    "requestParameters": {
+      "X-Amz-Date": "20190428T131515Z",
+      "bucketName": "superveryduperbucket",
+      "X-Amz-Algorithm": "AWS4-HMAC-SHA256",
+      "x-amz-acl": "private",
+      "X-Amz-SignedHeaders": "content-md5;content-type;host;x-amz-acl;x-amz-storage-class",
+      "Host": "s3.eu-north-1.amazonaws.com",
+      "X-Amz-Expires": "300",
+      "key": "giphy.gif",
+      "x-amz-storage-class": "STANDARD"
+    },
+    "responseElements": {
+      "x-amz-version-id": "Ui3XAWxhRNLxr6OK0qeYUqf.IhRbKj6x"
+    },
+    "additionalEventData": {
+      "SignatureVersion": "SigV4",
+      "CipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+      "bytesTransferredIn": 18944,
+      "AuthenticationMethod": "QueryString",
+      "x-amz-id-2": "D3UOSBIEWk2UX3zpJVmLDvKna90njapQe9nYUdiVFWDqoMzJuKHJmO6PbB4W4xfwsjcvBIrAYVo=",
+      "bytesTransferredOut": 0
+    },
+    "requestID": "A8241ABE39C2FFBE",
+    "eventID": "6267dcfd-15b5-4aed-ab5a-e0bc14b432f5",
+    "readOnly": false,
+    "resources": [
+      {
+        "type": "AWS::S3::Object",
+        "ARN": "arn:aws:s3:::superduperbuckethere/decentralized.jpg"
+      },
+      {
+        "accountId": "596626276812",
+        "type": "AWS::S3::Bucket",
+        "ARN": "arn:aws:s3:::superveryduperbucket"
+      }
+    ],
+    "eventType": "AwsApiCall",
+    "recipientAccountId": "596626276812"
+  },
+  "ext": ".gif"
+}

@@ -1,0 +1,33 @@
+
+pipelines:
+  branches:
+    development:
+      - step:
+          name: Deploy React
+          image: nikolaik/python-nodejs
+          caches:
+            - react
+          script:
+              - export AWS_ACCESS_KEY_ID="$AWS_ACCESS_KEY"
+              - export AWS_SECRET_ACCESS_KEY="$AWS_SECRET_ACCESS_KEY"
+              - cd client
+              - npm install
+              - npm run build
+              - pip install awscli --upgrade --ignore-installed six
+              - aws s3 sync ./build s3://infomakerupload 
+              - aws s3 cp --cache-control max-age=0 ./build/service-worker.js s3://infomakerupload/
+      - step:
+          name: Deploy functions
+          image: node:8.10
+          caches:
+            - lambda
+          script:
+              - export AWS_ACCESS_KEY_ID="$AWS_ACCESS_KEY"
+              - export AWS_SECRET_ACCESS_KEY="$AWS_SECRET_ACCESS_KEY"
+              - export BUCKET="$BUCKET"
+              - ./runDeploy.sh
+
+definitions:
+  caches:
+    react: ~/client/node_modules
+    lambda: ~/lambda/node_modules
