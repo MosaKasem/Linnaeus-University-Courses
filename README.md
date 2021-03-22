@@ -1,6 +1,6 @@
 # Getting started
 
-My assignments and projects handin from Lnu (Linnaeus Unviersity)
+My solution for the assignments and projects from Lnu (Linnaeus Unviersity)
 
 ----
 
@@ -13,13 +13,15 @@ My assignments and projects handin from Lnu (Linnaeus Unviersity)
 ---- 
 
 ### The purpose of this project
-1. Showcase my past and first experience in the programming world 
-2. CV-starter, well there is progress, and there is always room for progress.
+1. For me and to inspire others.
 
 ### Whats in this project?!
-My school assignments and projects att Linnaeus University.
+My solution for the school assignments and projects att Linnaeus University.
 Studied webb programming, a 2 years long program that can be extended with a third year for Master's and Master's level.
 Currently studying web science for the third year.
 
 ### Why?!
 Why not?!
+
+#### For students
+You may take inspiration. Perhaps adapt to come up with a better solution. Do not copy the solutions, that wont help.
