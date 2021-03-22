@@ -13,7 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@uppy/companion": "^0.17.4",
+    "@uppy/companion": "^1.13.2",
     "body-parser": "^1.18.2",
     "cors": "^2.8.5",
     "express": "^4.16.2",
