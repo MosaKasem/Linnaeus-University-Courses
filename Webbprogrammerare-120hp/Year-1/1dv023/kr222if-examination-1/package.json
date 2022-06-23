@@ -27,7 +27,7 @@
     "cheerio": "^1.0.0-rc.2",
     "fetch-cookie": "^0.7.0",
     "fs-extra": "^5.0.0",
-    "jsdom": "^11.6.0",
+    "jsdom": "^16.5.0",
     "node-fetch": "^2.0.0",
     "promise": "^8.0.1",
     "request": "^2.83.0",
